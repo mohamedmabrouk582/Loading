@@ -3,7 +3,7 @@
 # Loading
 this library for loading show loader view 
 
-<p align="center"><img src="https://github.com/mohamedmabrouk582/Loading/blob/master/screans/demo."></p>
+<p align="center"><img src="https://github.com/mohamedmabrouk582/Loading/blob/master/screans/demo.gif"></p>
 
 
 ## Adding LoaderLib to your project
