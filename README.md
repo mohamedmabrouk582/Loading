@@ -3,7 +3,7 @@
 # Loading
 this library for loading show loader view 
 
-<p align="center"><img src="https://github.com/suchoX/PlacePicker/blob/master/screens/demo.gif"></p>
+<p align="center"><img src="https://github.com/mohamedmabrouk582/Loading/blob/master/screans/demo.mp4"></p>
 
 
 ## Adding LoaderLib to your project
