@@ -9,6 +9,16 @@ this library for loading show loader view
 ## Adding LoaderLib to your project
 Include the following dependencies in your app's build.gradle :
 
+allprojects {
+repositories {
+      maven { url 'https://jitpack.io' }
+}
+	}
+
+dependencies {
+  implementation 'com.github.mohamedmabrouk582:Loading:1.0.0'
+}
+
 
 <com.mabrouk.loaderlib.LoaderView
             android:id="@+id/loader_view"
