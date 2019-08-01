@@ -1,4 +1,4 @@
-[ ![Download](https://api.bintray.com/packages/suchox/Android/com.mabrouk.loaderlib/images/download.svg) ](https://bintray.com/suchox/Android/com.mabrouk.loaderlib/_latestVersion)
+[![](https://jitpack.io/v/mohamedmabrouk582/Loading.svg)](https://jitpack.io/#mohamedmabrouk582/Loading)
 
 # Loading
 this library for loading show loader view 
