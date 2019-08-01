@@ -1,3 +1,5 @@
+[ ![Download](https://api.bintray.com/packages/suchox/Android/com.mabrouk.loaderlib/images/download.svg) ](https://bintray.com/suchox/Android/com.mabrouk.loaderlib/_latestVersion)
+
 # Loading
 this library for loading show loader view 
 
