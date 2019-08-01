@@ -7,6 +7,7 @@
                 type="androidx.databinding.ObservableBoolean"/>
         <variable name="callBack"
                   type="com.mabrouk.loaderlib.RetryCallBack"/>
+        <variable name="error" type="String"/>
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,6 +23,7 @@
             app:loaderType="WanderingCubes"
             app:showError="@{!showloader}"
             app:callBack="@{callBack}"
+            app:errorMsg="@{error}"
             app:loaderColor="@color/colorAccent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"

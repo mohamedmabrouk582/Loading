@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
        layoutBinding= DataBindingUtil.setContentView(this,R.layout.activity_main)
         layoutBinding.showloader=showLoader
         layoutBinding.callBack=calback
-
+        layoutBinding.error="hello"
         button.setOnClickListener {
             showLoader.set(false)
         }

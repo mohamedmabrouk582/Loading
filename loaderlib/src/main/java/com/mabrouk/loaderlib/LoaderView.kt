@@ -146,9 +146,9 @@ class LoaderView : ConstraintLayout{
         }
     }
 
-    fun setCallBack(callBack: RetryCallBack){
+    fun setCallBack(callBack: RetryCallBack?){
         this.callBack=callBack
-        callBack.apply {
+        callBack?.apply {
             retry_btn.setOnClickListener {
                 onRetry()
             }
@@ -170,9 +170,11 @@ class LoaderView : ConstraintLayout{
         if (enableRetry) enableRetry() else disableRetry()
     }
 
-    fun setErrorMsg(errorMsg:String){
-        this.errorMsg=errorMsg
-        error_msg.text=errorMsg
+    fun setErrorMsg(errorMsgs:String?){
+        errorMsgs?.apply {
+            errorMsg = this
+            error_msg.text = this
+        }
     }
 
 
