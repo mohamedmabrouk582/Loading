@@ -16,7 +16,7 @@ repositories {
 	}
 ```
 dependencies {
-  implementation 'com.github.mohamedmabrouk582:Loading:1.0.0'
+  implementation 'com.github.mohamedmabrouk582:Loading:$last_version'
 }
 
 
