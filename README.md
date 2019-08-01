@@ -4,6 +4,13 @@
 this library for loading show loader view 
 
 
+
+<p align="center"><img src="https://github.com/suchoX/PlacePicker/blob/master/screens/place_picker_deprecated.png"></p>
+
+## Adding LoaderLib to your project
+Include the following dependencies in your app's build.gradle :
+
+
 <com.mabrouk.loaderlib.LoaderView
             android:id="@+id/loader_view"
             android:layout_width="wrap_content"
