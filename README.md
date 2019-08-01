@@ -14,10 +14,12 @@ repositories {
       maven { url 'https://jitpack.io' }
 }
 	}
-
+```
 dependencies {
   implementation 'com.github.mohamedmabrouk582:Loading:1.0.0'
 }
+
+
 
 
 <com.mabrouk.loaderlib.LoaderView
@@ -33,3 +35,4 @@ dependencies {
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
+	    ```
