@@ -3,9 +3,8 @@
 # Loading
 this library for loading show loader view 
 
+<p align="center"><img src="https://github.com/suchoX/PlacePicker/blob/master/screens/demo.gif"></p>
 
-
-<p align="center"><img src="https://github.com/suchoX/PlacePicker/blob/master/screens/place_picker_deprecated.png"></p>
 
 ## Adding LoaderLib to your project
 Include the following dependencies in your app's build.gradle :
