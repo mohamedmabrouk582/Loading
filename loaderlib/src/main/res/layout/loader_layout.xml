@@ -65,7 +65,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <Button
+    <TextView
+            android:gravity="center"
             android:textSize="14sp"
             android:textColor="#000"
             android:background="@drawable/retry_btn"
