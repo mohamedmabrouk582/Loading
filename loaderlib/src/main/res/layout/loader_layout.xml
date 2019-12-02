@@ -66,6 +66,7 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
 
     <Button
+            android:textSize="14sp"
             android:textColor="#000"
             android:background="@drawable/retry_btn"
             android:textAllCaps="false"

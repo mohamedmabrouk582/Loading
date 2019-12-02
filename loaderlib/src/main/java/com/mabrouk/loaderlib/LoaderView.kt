@@ -118,7 +118,7 @@ class LoaderView : ConstraintLayout{
         error_msg.setTextColor(loaderColor)
         loading_txt.setTextColor(loaderColor)
         dots_txt.setTextColor(loaderColor)
-        val background = retry_btn.getBackground()
+        val background = retry_btn.background
         background.setColorFilter(loaderColor, PorterDuff.Mode.SRC_ATOP)
     }
 

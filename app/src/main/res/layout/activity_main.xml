@@ -18,7 +18,7 @@
     <com.mabrouk.loaderlib.LoaderView
             android:id="@+id/loader_view"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             app:showLoader="@{showloader.get()}"
             app:loaderType="WanderingCubes"
             app:showError="@{!showloader}"
