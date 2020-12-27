@@ -23,6 +23,7 @@ class LoaderView : ConstraintLayout{
    private  var enableRetry:Boolean = true
    private  var errorMsg:String = " No Data Found "
    private  var loaderColor:Int = Color.WHITE
+   private  var loadTxt:String= "Loading"
    private  var loaderType:LoaderType=LoaderType.RotatingPlane
    private  var callBack:RetryCallBack?=null
    private  var defStyleAttr:Int=0
@@ -54,6 +55,7 @@ class LoaderView : ConstraintLayout{
       showError=typedArray.getBoolean(R.styleable.LoaderView_showError,false)
       enableRetry=typedArray.getBoolean(R.styleable.LoaderView_enableRetry,true)
       typedArray.getString(R.styleable.LoaderView_errorMsg)?.apply { errorMsg=this }
+      typedArray.getString(R.styleable.LoaderView_loadTxt)?.apply { loadTxt=this }
       loaderColor=typedArray.getColor(R.styleable.LoaderView_loaderColor,Color.WHITE)
       loaderType=LoaderType.values()[typedArray.getInt(R.styleable.LoaderView_loaderType,0)]
       setUp()
@@ -69,6 +71,7 @@ class LoaderView : ConstraintLayout{
             }
         }
         error_msg.text=errorMsg
+        loading_txt.text=loadTxt
         loaderType()
         setupColors()
     }
@@ -168,6 +171,11 @@ class LoaderView : ConstraintLayout{
     fun setEnableRetry(enableRetry:Boolean){
         this.enableRetry=enableRetry
         if (enableRetry) enableRetry() else disableRetry()
+    }
+
+    fun setLoadTxt(loadTxt:String){
+       this.loadTxt=loadTxt
+       loading_txt.text=loadTxt
     }
 
     fun setErrorMsg(errorMsgs:String?){
