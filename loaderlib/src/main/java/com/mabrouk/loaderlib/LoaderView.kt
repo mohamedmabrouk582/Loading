@@ -27,6 +27,7 @@ class LoaderView : ConstraintLayout{
    private  var loaderType:LoaderType=LoaderType.RotatingPlane
    private  var callBack:RetryCallBack?=null
    private  var defStyleAttr:Int=0
+   private  var withLoadTxt:Boolean=true
    val counDown:CountDownTimer by lazy { object :CountDownTimer(3000,1000){
        override fun onFinish() {
          start()
@@ -54,7 +55,8 @@ class LoaderView : ConstraintLayout{
       showLoader=typedArray.getBoolean(R.styleable.LoaderView_showLoader,false)
       showError=typedArray.getBoolean(R.styleable.LoaderView_showError,false)
       enableRetry=typedArray.getBoolean(R.styleable.LoaderView_enableRetry,true)
-      typedArray.getString(R.styleable.LoaderView_errorMsg)?.apply { errorMsg=this }
+      withLoadTxt=typedArray.getBoolean(R.styleable.LoaderView_withLoadingTxt,true)
+        typedArray.getString(R.styleable.LoaderView_errorMsg)?.apply { errorMsg=this }
       typedArray.getString(R.styleable.LoaderView_loadTxt)?.apply { loadTxt=this }
       loaderColor=typedArray.getColor(R.styleable.LoaderView_loaderColor,Color.WHITE)
       loaderType=LoaderType.values()[typedArray.getInt(R.styleable.LoaderView_loaderType,0)]
@@ -63,6 +65,7 @@ class LoaderView : ConstraintLayout{
     }
 
     fun setUp(){
+        if (!withLoadTxt)hideLoadTxt()
         if (showError) showError() else hideError()
         if (showLoader) showLoader() else hideLoader()
         callBack?.apply {
@@ -78,9 +81,15 @@ class LoaderView : ConstraintLayout{
 
     fun showLoader(){
         loader_bar.visibility= VISIBLE
-        loading_txt.visibility= VISIBLE
-        dots_txt.visibility = VISIBLE
-        counDown.start()
+        if (withLoadTxt){
+            loading_txt.visibility= VISIBLE
+            dots_txt.visibility = VISIBLE
+            counDown.start()
+
+        } else{
+            hideLoadTxt()
+        }
+
         hideError()
     }
 
@@ -88,6 +97,10 @@ class LoaderView : ConstraintLayout{
         counDown.onFinish()
         counDown.cancel()
         loader_bar.visibility= GONE
+        hideLoadTxt()
+    }
+
+    fun hideLoadTxt(){
         loading_txt.visibility= GONE
         dots_txt.visibility = GONE
     }

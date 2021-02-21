@@ -6,6 +6,7 @@
         <attr name="enableRetry" format="boolean"/>
         <attr name="errorMsg" format="string"/>
         <attr name="loadTxt" format="string"/>
+        <attr name="withLoadingTxt" format="boolean"/>
         <attr name="loaderColor" format="color"/>
         <attr name="callBack" format="reference"/>
         <attr name="loaderType" format="enum" >

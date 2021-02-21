@@ -24,7 +24,7 @@
             app:showError="@{!showloader}"
             app:callBack="@{callBack}"
             app:errorMsg="@{error}"
-            app:loadTxt="ijijijij"
+            app:withLoadingTxt="true"
             app:loaderColor="@color/colorAccent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
